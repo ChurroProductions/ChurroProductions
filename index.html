@@ -4,12 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Churro Productions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1><span class="glow">Churro</span> Productions</h1>
-        <p>Site is down...</p>
+    <div id="splash-screen">
+        <img src="https://i.ibb.co/nsQ35WVZ/Churro-Prod-1.png" alt="Churro Productions Logo">
     </div>
+
+    <div class="container">
+        <h1><span class="churro">Churro</span> Productions</h1>
+        <h2>Since 2022</h2>
+        
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="games.html">Games</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">ToS</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        
+        <hr class="divider">
+        
+        <section class="follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@ChurroBoiii" target="_blank" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@churroboiiifr" target="_blank" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://discord.gg/QzM8YZ27Us" target="_blank" aria-label="Discord">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="https://www.twitch.tv/churrobananaman124" target="_blank" aria-label="Twitch">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+                <a href="https://github.com/ChurroProductions" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div id="page-transition"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.container').style.opacity = '1';
+
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', e => {
+                const href = link.getAttribute('href');
+                if (href && href !== '#' && window.location.href !== new URL(href, location).href) {
+                    e.preventDefault();
+                    document.getElementById('page-transition').style.opacity = '1';
+                    setTimeout(() => location.href = href, 1000);
+                }
+            });
+        });
+    });
+    </script>
 </body>
 </html>
