@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churro Productions - Privacy Policy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            align-items: flex-start;
+        }
+        .container {
+            padding-top: 4rem;
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .page-content {
+            text-align: left;
+            max-width: 800px;
+            margin: 6rem auto 0;
+            padding: 0 2rem;
+        }
+        .page-content h3,
+        .page-content h4 {
+            text-align: center;
+        }
+        .follow-us {
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="churro">Churro</span> Productions</h1>
+        <h2>Since 2022</h2>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="privacy-policy.html" class="active">Privacy Policy</a>
+            <a href="terms-of-service.html">ToS</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        
+        <hr class="divider">
+        
+        <section class="follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@ChurroBoiii" target="_blank" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@churroboiiifr" target="_blank" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://discord.gg/QzM8YZ27Us" target="_blank" aria-label="Discord">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="https://www.twitch.tv/churrobananaman124" target="_blank" aria-label="Twitch">
+                    <i class="fa-brands fa-twitch"></i>
+                </a>
+                <a href="https://github.com/ChurroProductions" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </section>
+        
+        <section class="page-content privacy-policy">
+            <h3>Privacy Policy</h3>
+            <p><strong>Effective Date:</strong> February 13, 2026</p>
+            
+            <p>Welcome to Churro Productions LLC! We value your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard your data when you play our games. By playing our games, you agree to the practices described in this policy.</p>
+            
+            <h4>Information We Collect</h4>
+            <p>When you use our games, we may collect the following types of information:</p>
+            <ul>
+                <li><strong>Personal Information:</strong> Information that can identify you, such as your IP address. This is used for account management and security purposes.</li>
+                <li><strong>Device Information:</strong> Details about the device you use to play our games, such as hardware model and operating system version.</li>
+            </ul>
+            
+            <h4>How We Use Your Information</h4>
+            <p>We use the information we collect to:</p>
+            <ul>
+                <li>Provide and improve our games and services</li>
+                <li>Address technical issues and enhance user experience</li>
+                <li>Enforce our terms and conditions, including banning users when necessary</li>
+            </ul>
+            
+            <h4>Third-Party Services</h4>
+            <p>We may share your information with the following third-party services to improve your gaming experience:</p>
+            <ul>
+                <li><strong>Photon:</strong> Photon allows users to join lobbies and connect to voice chat. It may collect data necessary for these functions.</li>
+                <li><strong>Playfab:</strong> Playfab helps us store player data, manage bans, and use IP addresses to assist with banning users who violate our terms.</li>
+            </ul>
+            
+            <h4>Data Security</h4>
+            <p>Churro Productions LLC takes reasonable measures to protect your information from unauthorized access, alteration, disclosure, or destruction. We employ industry standard security measures to ensure your data is safe.</p>
+            
+            <h4>Data Sharing and Selling</h4>
+            <p>We do not sell or give out your personal information to third parties for their marketing purposes. Your privacy is important to us, and we are committed to protecting it.</p>
+            
+            <h4>Your Rights</h4>
+            <p>As a user, you have the right to:</p>
+            <ul>
+                <li>Access the personal information we hold about you</li>
+                <li>Request correction or deletion of your personal information</li>
+                <li>Object to certain processing of your personal information</li>
+            </ul>
+            <p>To exercise these rights, please contact us using the information provided below.</p>
+            
+            <h4>Contact Us</h4>
+            <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+            <p>Churro Productions LLC<br>
+            Email: <a href="mailto:churroproductions@outlook.com">churroproductions@outlook.com</a></p>
+        </section>
+    </div>
+
+    <div id="page-transition"></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('.container').style.opacity = '1';
+
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', e => {
+                const href = link.getAttribute('href');
+                if (href && href !== '#' && window.location.href !== new URL(href, location).href) {
+                    e.preventDefault();
+                    document.getElementById('page-transition').style.opacity = '1';
+                    setTimeout(() => location.href = href, 1000);
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
