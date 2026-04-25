@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHURRO PRODUCTIONS LLC</title>
+<link rel="icon" type="image/x-icon" href="https://i.ibb.co/nsQ35WVZ/Churro-Prod-1.png">
+<link rel="stylesheet" href="style.css">
+
+<!-------------- MAIN -------------->
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div><strong>CHURRO PRODUCTIONS</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="Tutorials.html">Tutorials</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="Staff.html">Staff</a>
+        <a href="TOS.html">Terms Of Service</a>
+        <a href="PrivacyPolicy.html">Privacy Policy</a>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <div class="header-content">
+        <h1>CHURRO PRODUCTIONS LLC</h1>
+        <h3>Staff</h3>
+        <p>Unity Development • PC & VR • Since 2022</p>
+    </div>
+</header>
+
+<!-- STAFF -->
+<section id="staff">
+    <h2>Founders</h2>
+    <div class="cards2">
+
+        <div class="card2">
+            <div class="card-content">
+                <div class="text">
+                    <h3>ChurroBoiii</h3>
+                    <p>Founder and Main Developer</p>
+                </div>
+                <img src="https://i.ibb.co/9kr5FyT2/68257f43b8deb068a836ac33f2f95032-1.png" alt="Founder Image">
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="card-content">
+                <div class="text">
+                    <h3>BeyondTG</h3>
+                    <p>Co-Founder and Secondary Developer</p>
+                  </div>
+                <img src="https://i.ibb.co/Qjx7FX6W/6eb6125dbd70a3f63028c6be62e3569a.png" alt="Co-Founder Image">
+            </div>
+        </div>
+</section>
+
+<section id="staff">
+    <h2>Staff</h2>
+    <div class="cards2">
+
+        <div class="card2">
+            <div class="card-content">
+                <div class="text">
+                    <h3>HammerHead</h3>
+                    <p>Early Access Tester</p>
+                </div>
+                <img src="https://i.ibb.co/4Rvj8cBV/0a79df9c2107e07fe07c594965894042.png" alt="Early Access Tester Image">
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="card-content">
+                <div class="text">
+                    <h3>ThatModder</h3>
+                    <p>Early Access Tester and Moderator</p>
+                </div>
+                <img src="https://i.ibb.co/0yRGvCSG/6c11ffb2fb618c438ac019c6531a7f35.png" alt="Early Access Tester Image">
+            </div>
+        </div>
+        
+</section>
+
+<!-- SERVICES -->
+<footer>
+    <p>© Copyright 2026 - CHURRO PRODUCTIONS LLC - All Rights Reserved</p>
+</footer>
+
+<script>
+    // Scroll animation
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                section.classList.add("visible");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
