@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHURRO PRODUCTIONS LLC</title>
+<link rel="icon" type="image/x-icon" href="https://i.ibb.co/nsQ35WVZ/Churro-Prod-1.png">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-------------- MAIN -------------->
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div><strong>CHURRO PRODUCTIONS</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="packages.html">Packages</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="staff.html">Staff</a>
+        <a href="tos.html">Terms Of Service</a>
+        <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <div class="header-content">
+        <h1>CHURRO PRODUCTIONS LLC</h1>
+        <h3>Home</h3>
+        <p>Unity Development • PC & VR • Since 2022</p>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        CHURRO PRODUCTIONS LLC specializes in creating immersive Unity projects by creating Physics-Based mechanics
+        for both PC and Virtual Reality, Since 2022.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Services We Use</h2>
+    <div class="cards2">
+        </div>
+        <div class="card">
+            <h3>Multiplayer</h3>
+            <p>Our online projects rely on Photon-Based, or Normcore networking systems for the best multiplayer experience.</p>
+        </div>
+
+        <div class="card">
+            <h3>Player Data</h3>
+            <p>To manage player data like currency, and banning we use PlayFab.</p>
+        </div>
+
+        <div class="card">
+            <h3>Publishers</h3>
+            <p>We mainly publish our games on Meta Horizon, Itch.io, Our Discord Server, and directly from our website.</p>
+        </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© Copyright 2026 - CHURRO PRODUCTIONS LLC - All Rights Reserved</p>
+</footer>
+
+<script>
+    // Scroll animation
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                section.classList.add("visible");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
