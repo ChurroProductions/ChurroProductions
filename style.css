@@ -156,8 +156,11 @@
 
     .card2 img {
         width: 120px;
-        height: 120px;
-        transform: translateX(400px) translateY(-30px);
+        height: auto;
+        transform: translateX(auto) translateY(auto);
+        max-width: 100%;
+        display: block;
+        margin-top: 20px;
     }
 
     .card {
